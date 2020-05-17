@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<!--esta es mi practica 66-->
+
+<head>
+    <title>Practica 66</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <div style="width:100px;height:100px;background:cyan" id="fon">
+    </div>
+    <p id="bac">0</p>
+
+    <script>
+        addEventListener('DOMContentLoaded', start, false);
+
+        function start() {
+            document.getElementById('fon').addEventListener('mousemove', move, false);
+        }
+
+        function move() {
+            var a;
+            a = parseInt(document.getElementById('bac').innerHTML);
+            a++;
+            document.getElementById('bac').innerHTML = a;
+        }
+    </script>
+
+</body>
+
+</html>
